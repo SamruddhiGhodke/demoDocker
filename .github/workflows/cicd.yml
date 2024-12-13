@@ -16,8 +16,8 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-      #- name: Build Project
-      #  run: mvn clean install -DskipTests
+      - name: Build Project
+        run: mvn clean install -DskipTests
 
       - name: Login to docker hub
         run: docker login -u shreeghodke123@gmail.com -p S@mruddhi043
